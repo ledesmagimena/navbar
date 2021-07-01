@@ -19,5 +19,8 @@
 }
 body {
   width: 100%;
-  background-image: url(./img/juegos-img.jpg);
+  background: black;
+}
+.logo {
+  width: 50px;
 }
