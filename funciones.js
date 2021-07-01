@@ -34,10 +34,10 @@ function navPag(usuarios) {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navg navbar-nav w-100 justify-content-end">
-                <a class="nav-link text-white active" href="#">iniciar sesion</a>
+                
                 <a class="nav-link text-white" href="#">ayuda</a>
                 <a class="nav-link text-white" href="#">about us</a>
-                <a class="nav-link text-white">registrarse</a>
+                
               </div>
             </div>
           </nav>
