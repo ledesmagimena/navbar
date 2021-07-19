@@ -1,9 +1,18 @@
-import { navUsuario, usuariosSinR } from "./funcionesNav.js";
+import { navUsuario, usuariosSinR, navAdm } from "./funcionesNav.js";
 const header = document.querySelector(".header");
 const navbar = document.createElement("div");
 
 let log = false;
 localStorage.setItem("log", log);
+
+/*const checkUser=(log,usuariosSinR,navUsuario)=>{
+  if(log){
+    navbar.innerHTML=navUsuario(usuario)
+    header.append(navbar)
+  }else{
+    navbar.innerHTML=usuariosSinR(usuario)
+  }
+}*/
 
 function navPag() {
   let log = localStorage.getItem("log");
@@ -13,8 +22,10 @@ function navPag() {
       navbar.innerHTML = navUsuario(usuario);
       header.append(navbar);
       return;
-    } /*else {
-    }*/
+    } else {
+      navbar.innerHTML = navAdm("usuario");
+      header.append(navbar);
+    }
   } else {
     navbar.innerHTML = usuariosSinR(usuario);
     console.log(navbar);
